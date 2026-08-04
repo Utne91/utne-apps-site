@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Utne Apps</title>
+  <desc id="desc">Delingsbilde for Utne Apps</desc>
+  <rect width="1200" height="630" fill="#f7f2e8"/>
+  <circle cx="1020" cy="130" r="92" fill="#2f7f8f"/>
+  <circle cx="1068" cy="480" r="118" fill="#f05d4f"/>
+  <circle cx="170" cy="510" r="86" fill="#b7c64b"/>
+  <rect x="82" y="82" width="1036" height="466" rx="38" fill="#10253f"/>
+  <path d="M830 120c86 34 153 99 180 184 26 82 12 173-39 240H518c-55-31-95-78-111-135-26-92 20-193 112-250 82-51 205-70 311-39Z" fill="#1d6f7a"/>
+  <path d="M124 447c98-38 194-34 288 11 74 36 148 38 221 8 106-43 212-34 318 27v55H124Z" fill="#f05d4f"/>
+  <g fill="#fff">
+    <text x="146" y="220" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="800">Utne Apps</text>
+    <text x="150" y="296" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500">Enklere dager. Bedre flyt.</text>
+    <text x="150" y="392" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">Laererflyt · Dayly · TrafikkMester</text>
+  </g>
+  <g transform="translate(820 202)">
+    <rect width="196" height="196" rx="44" fill="#f7f2e8"/>
+    <rect x="34" y="34" width="58" height="58" rx="16" fill="#2f7f8f"/>
+    <rect x="104" y="34" width="58" height="58" rx="16" fill="#f05d4f"/>
+    <rect x="34" y="104" width="58" height="58" rx="16" fill="#b7c64b"/>
+    <rect x="104" y="104" width="58" height="58" rx="16" fill="#10253f"/>
+  </g>
+</svg>
