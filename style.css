@@ -147,7 +147,7 @@ section {
   max-width: 1120px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 18px;
 }
 
@@ -168,15 +168,16 @@ section {
   height: 58px;
   display: grid;
   place-items: center;
-  border-radius: 8px;
-  background: var(--teal);
-  color: white;
-  font-size: 24px;
-  font-weight: 900;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(16, 37, 63, 0.12);
 }
 
-.app-card:nth-child(2) .app-icon { background: var(--coral); }
-.app-card:nth-child(3) .app-icon { background: var(--lime); color: var(--ink); }
+.app-icon-mathsnake {
+  background: #8b5cf6;
+  color: white;
+  font-size: 26px;
+}
 
 .app-tag {
   color: var(--teal);
