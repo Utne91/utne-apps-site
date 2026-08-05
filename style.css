@@ -109,12 +109,77 @@ h1 em, h2 em { color: var(--coral); font-style: normal; }
   color: white;
 }
 
-.hero-art {
-  min-height: 420px;
+/* Ny hero-visuell komponent */
+.hero-visual {
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  border-radius: 8px;
-  background: url("/og.svg") center / cover no-repeat;
-  box-shadow: 0 28px 80px rgba(16, 37, 63, 0.22);
+}
+
+.hero-card-grid {
+  width: 100%;
+  max-width: 460px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(16, 37, 63, 0.12);
+}
+
+.hero-app-tile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-app-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(16, 37, 63, 0.08);
+}
+
+.hero-app-tile img {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(16, 37, 63, 0.12);
+}
+
+.tile-icon-mathsnake {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #8b5cf6;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  box-shadow: 0 3px 8px rgba(16, 37, 63, 0.12);
+}
+
+.hero-app-tile strong {
+  display: block;
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.hero-app-tile span {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 600;
+  margin-top: 2px;
 }
 
 section {
@@ -283,7 +348,12 @@ footer a { text-decoration: none; }
 
 @media (max-width: 820px) {
   .hero, .section-heading, .promise { grid-template-columns: 1fr; display: grid; }
-  .hero-art { min-height: 270px; }
+  .hero-visual { min-height: auto; margin-top: 24px; }
+  .hero-card-grid { grid-template-columns: 1fr 1fr; }
   .app-grid { grid-template-columns: 1fr; }
   .nav { align-items: flex-start; }
+}
+
+@media (max-width: 480px) {
+  .hero-card-grid { grid-template-columns: 1fr; }
 }
